@@ -1,0 +1,520 @@
+*, ::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+body {
+  scroll-behavior: smooth;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+body nav {
+  position: absolute;
+  top: 2vh;
+  width: 100%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav #logo {
+  font-size: 50px;
+  margin-left: 10%;
+  padding: 5px 30px;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 1120px) {
+  body nav .menu {
+    display: none;
+  }
+  body nav ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    margin-right: 3%;
+  }
+  body nav ol li {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    padding: 5px 30px;
+  }
+  body nav ol li a {
+    color: white;
+    text-decoration: none;
+  }
+  body nav ol li:hover {
+    cursor: pointer;
+  }
+  body nav ol li:hover a {
+    color: #CF469F;
+  }
+  body nav ol li:nth-child(3) {
+    border-right: 1px solid white;
+  }
+}
+
+body main #p1 {
+  background: linear-gradient(107.81deg, #2E22AB 5.97%, #CF469F 110.03%);
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
+body main #p1 #left_part {
+  position: absolute;
+  margin: 20% 0 0 10%;
+  width: 30%;
+}
+
+body main #p1 #left_part #left_part_header {
+  font-size: 40px;
+}
+
+body main #p1 #left_part #left_part_header_text {
+  margin: 20px 0px;
+}
+
+body main #p1 #left_part .btn {
+  padding: 8px 20px;
+  min-width: 200px;
+  margin-right: 15px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+
+body main #p1 #left_part .btn:nth-child(1) {
+  color: #EE8C19;
+  background-color: white;
+}
+
+body main #p1 #rightPart {
+  position: absolute;
+  top: 18vh;
+  right: 10%;
+}
+
+body main #radius-top {
+  background-color: white;
+  top: 80vh;
+  left: -50vw;
+  position: absolute;
+  width: 200vw;
+  height: 700px;
+  border-radius: 100%;
+}
+
+body main #p2 {
+  position: relative;
+  top: -10vh;
+  z-index: 2;
+  min-height: 100vh;
+  width: 50vw;
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main #p2 img {
+  position: absolute;
+}
+
+body main #p2 #p2_header {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+body main #p2 .item_container {
+  margin-top: 200px;
+  position: relative;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  z-index: 2;
+}
+
+body main #p2 .item_container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F3A300), to(#F07A13));
+  background: linear-gradient(180deg, #F3A300 0%, #F07A13 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Love Ya Like A Sister', cursive;
+  margin-bottom: 10px;
+}
+
+body main #p2 .item_container header span {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+body main #p2 .item_container header h2 {
+  font-size: 20px;
+}
+
+body main #p2 .item_container img {
+  z-index: 1;
+}
+
+body main #p2 .item_container #item1 {
+  margin-top: 42px;
+}
+
+body main #p2 .item_container #item4 {
+  margin-top: 80px;
+}
+
+body main #p2 .item_container #p2_pic1 {
+  top: -100%;
+  left: -80%;
+  -webkit-transform: scale(0.7) rotate(-20.2deg);
+          transform: scale(0.7) rotate(-20.2deg);
+}
+
+body main #p2 .item_container #p2_pic2 {
+  left: 80%;
+  top: -180%;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+body main #p2 .item_container #p2_pic3 {
+  left: -100%;
+  top: -140%;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+body main #p2 .item_container #p2_pic4 {
+  left: -50%;
+  top: -20%;
+  -webkit-transform: scale(0.7) rotate(-72.2deg);
+          transform: scale(0.7) rotate(-72.2deg);
+}
+
+body main #p2 .item_container #arrow1 {
+  position: absolute;
+  left: 130%;
+  top: 90%;
+}
+
+body main #p2 .item_container #arrow2 {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  top: 100%;
+  left: -80%;
+}
+
+body main #p2 .item_container #arrow3 {
+  left: 100%;
+  top: 80%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+body main #p2 .item_container:nth-child(odd) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+body main #p2 #loremIpsum_bottom {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F3A300), to(#F07A13));
+  background: linear-gradient(180deg, #F3A300 0%, #F07A13 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Love Ya Like A Sister', cursive;
+  margin-top: 50%;
+  font-size: 25px;
+}
+
+body main #p3 {
+  min-height: 100vh;
+  background: linear-gradient(123.15deg, #2E158B 20.79%, #531594 132.06%);
+  padding: 40px 10vw;
+  position: relative;
+}
+
+body main #p3 header {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body main #p3 header h2 {
+  font-size: 2.5em;
+}
+
+body main #p3 header p {
+  font-size: 0.7em;
+  padding: 8px;
+}
+
+body main #p3 #white_container {
+  position: relative;
+  min-height: 75vh;
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+body main #p3 #white_container #white_container_top_header {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #F07A13;
+  color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 20px 130px;
+}
+
+body main #p3 #white_container #white_container_top_header p {
+  padding: 1px;
+  font-size: 0.9em;
+  font-weight: 800;
+}
+
+body main #p3 #white_container #white_container_top_header h2 {
+  font-size: 1.6em;
+}
+
+body main #p3 #white_container #white_container_top_header img {
+  position: absolute;
+  top: -20%;
+  left: 1%;
+  -webkit-transform: translateY(-40%) scale(0.7);
+          transform: translateY(-40%) scale(0.7);
+}
+
+body main #p3 #white_container .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 12% 12%;
+      grid-template-columns: 65% 12% 12%;
+  text-align: center;
+}
+
+body main #p3 #white_container .part1 {
+  border-bottom: 1px solid #EE8C19;
+  padding: 15px 0px;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+body main #p3 #white_container .part1 .text-orange {
+  margin-bottom: 20px;
+  color: #EE8C19;
+}
+
+body main #p3 #white_container #part2 {
+  min-height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main #p3 #white_container #part2 .row .check {
+  display: inline-block;
+  -webkit-transform: rotate(45deg) scale(0.8);
+          transform: rotate(45deg) scale(0.8);
+  height: 18px;
+  width: 10px;
+  border-bottom: 3px solid #F5B035;
+  border-right: 3px solid #F5B035;
+  margin: 0 auto;
+}
+
+body main #p3 #white_container #part2 .row .xIcon {
+  font-weight: 800;
+  font-size: 0.8em;
+  color: #a7a7a7;
+  padding-top: 4px;
+  font-style: normal;
+}
+
+body main #p3 #white_container #part2 .row .tittle {
+  text-align: left;
+  padding-left: 30px;
+  font-size: 0.9em;
+}
+
+body main #p3 #white_container #part3 {
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+body main #p3 #white_container #part3 header {
+  color: black;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+body main #p3 #white_container #part3 .btn {
+  padding: 5px 30px;
+  border: 1px solid white;
+  color: white;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+body main #p3 #white_container #part3 .btn:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F3A300), to(#F07A13));
+  background: linear-gradient(180deg, #F3A300 0%, #F07A13 100%);
+}
+
+body main #p3 #white_container #part3 .btn:nth-child(2) {
+  color: #EE8C19;
+  background-color: white;
+  border: 1px solid #EE8C19;
+}
+
+body .formContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.952);
+  z-index: 100;
+  -webkit-animation: opacity 0.2s linear forwards;
+          animation: opacity 0.2s linear forwards;
+}
+
+body .formContainer form {
+  padding: 100px;
+  padding-bottom: 60px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 50vh auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 2px solid #531594;
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-animation: opacity 0.5s 0.2s linear forwards;
+          animation: opacity 0.5s 0.2s linear forwards;
+}
+
+body .formContainer form header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body .formContainer form input {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #CF469F;
+  padding: 10px 5px;
+}
+
+body .formContainer form input:focus {
+  outline: none;
+}
+
+body .formContainer form input[type="submit"] {
+  margin-top: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F3A300), to(#F07A13));
+  background: linear-gradient(180deg, #F3A300 0%, #F07A13 100%);
+  padding: 10px 30px;
+  color: white;
+  border-radius: 5px;
+}
+
+body .formContainer form #zamknij_pop_up {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */

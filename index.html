@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="phoneFixes.css">
+
+   <!-- gsap -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+   <!-- Fonts -->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Montserrat:wght@400;700&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+   <title>Zadanie Rekrutacyjne</title>
+</head>
+<body>
+   <header>
+      <nav>
+         <span id="logo">LOGO</span>
+
+         <button class="menu" >
+            <svg width="50" height="50" viewBox="0 0 100 100">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
+
+         <ol>
+            <li id="start">
+               <a>Start</a>
+            </li>
+            <li id="jakToDziala">
+               <a>Jak to działa?</a>
+            </li>
+            <li id="cennik">
+               <a>Cennik</a>
+            </li>
+            <li id="logowanie">
+               <a>Logowanie</a>
+            </li>
+
+            <li id="rejestracja">
+               <a>Rejestracja</a>
+            </li>
+         </ol>
+      </nav>
+   </header>
+
+   <main>
+      <section id="p1">
+         <article id="left_part">
+            <header id="left_part_header">
+               Poznaj Lorem Ipsum!
+            </header>
+
+            <p id="left_part_header_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+
+            <section class="btns_container">
+               <button class="btn" id="left_btn">Pobierz</button>
+               <button class="btn">O Aplikacji!</button>
+            </section>
+         </article>
+
+         <img src="./assets/phone_hand.png" alt="." id="rightPart"/>
+      
+      </section>
+
+      <!-- chciałem to zrobić w beforze p2, ale okazało się, że z-index mi nie pomoże :( -->
+      <span id="radius-top"></span>
+
+      <section id="p2">
+
+         <header id="p2_header"> Jak to działa?</header>
+
+         <article class="item_container" id="item1">
+
+            <img src="./assets/phone_big.png" alt="404" class="phone_pic" id="p2_pic1"/>
+
+            <header>
+               <span>1</span>
+               <h2> Lorem ipsum <br>dolor sit amee</h2>
+            </header>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <img src="./assets/arrow1.png" id="arrow1" class="arrow" />
+         </article>
+
+         <article class="item_container" id="item2">
+            <header>
+               <span>2</span>
+               <h2> Lorem ipsum <br>dolor sit amee</h2>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="./assets/phone_big.png" alt="404" class="phone_pic"id="p2_pic2"/>
+            <img src="./assets/arrow1.png" id="arrow2" class="arrow"/>
+         </article>
+
+         <article class="item_container" id="item3">
+            <img src="./assets/phone_big.png" alt="404" class="phone_pic"id="p2_pic3"/>
+            <header>
+               <span>3</span>
+               <h2> Lorem ipsum <br>dolor sit amee</h2>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="./assets/arrow2.png" id="arrow3" class="arrow"/>
+         </article>
+
+         <article class="item_container" id="item4">
+            <img src="./assets/phone_big.png" alt="404" class="phone_pic"id="p2_pic4"/>  
+            <header>
+               <span>4</span>
+               <h2> Lorem ipsum <br>dolor sit amee</h2>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </article>
+
+
+         <p id="loremIpsum_bottom">Lorem ipsum!</p>
+
+      </section>
+
+
+      <section id="p3">
+         <header>
+            <h2>Cennik</h2>
+            <p>Ile to kosztuje?</p>
+         </header>
+
+         <section id="white_container">
+            <header id="white_container_top_header">
+               <img src="./assets//phone_small.png" alt="404" />
+               <p>Lorem ipsum</p>
+               <h2>Dolor sit amet</h2>
+            </header>
+
+            <section class="part1">
+               <div class="row">
+                  <span></span>
+                  <p class="text-orange">basic</p>
+                  <p class="text-orange">Premium</p>
+               </div>
+               
+               <div class="row">
+                  <span></span>
+                  <p>Wersja <br> darmowa</p>
+                  <p>79,99 <br> <span style="color:#2FA600; font-size:0.8em">30% taniej</span></p>
+               </div>
+            </section>
+
+           <div id="part2">
+               <div class="row">
+                  <p class="tittle">Lorem ipsum</p>
+                  <i class="check"></i>
+                  <i class="check"></i>
+               </div>
+               <div class="row">
+                  <p class="tittle">Lorem ipsum</p>
+                  <i class="check"></i>
+                  <i class="check"></i>
+               </div>
+               <div class="row">
+                  <p class="tittle">Lorem ipsum</p>
+                  <i class="check"></i>
+                  <i class="check"></i>
+               </div>
+               <div class="row">
+                  <p class="tittle">Lorem ipsum</p>
+                  <i class="check"></i>
+                  <i class="check"></i>
+               </div>
+               <div class="row">
+                  <p class="tittle">Lorem ipsum</p>
+                  <i class="xIcon">X</i>
+                  <i class="check"></i>
+               </div>
+               <div class="row">
+                  <p class="tittle">Lorem ipsum</p>
+                  <i class="xIcon">X</i>
+                  <i class="check"></i>
+               </div>
+               <div class="row">
+                  <p class="tittle">Lorem ipsum</p>
+                  <i class="xIcon">X</i>
+                  <i class="check"></i>
+               </div>
+               <div class="row">
+                  <p class="tittle">Lorem ipsum</p>
+                  <i class="xIcon">X</i>
+                  <i class="check"></i>
+               </div>
+           </div>
+
+           <section id="part3">
+               <header id="p3_header">Zarejestruj się i wypróbuj!</header>
+
+               <section class="btns_container">
+                  <button class="btn">Rejestracja</button>
+                  <button class="btn">Logowanie</button>
+               </section>
+           </section>
+         </section>
+
+
+      </section>
+   </main>
+
+   <script src="./index.js"></script>
+   <script src="./scrollAnims.js"></script>
+</body>
+</html>
