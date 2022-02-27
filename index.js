@@ -90,7 +90,7 @@ function addPopUp ()
 
 
    // Dodawanie ;)
-   console.log( window.location.href )
+   // console.log( window.location.href )
    console.log( window.location.hash )
    const path = window.location.hash
 
@@ -123,8 +123,8 @@ function addPopUp ()
 
 function closePopUp ()
 {
-   // Tutaj jakby dać link bezpośredni to chyba zniknie ten znak zapytania w URL'u
-   history.replaceState( null, null, window.location.origin );
+   // na produkcji ostatni parametr byłby bezpośrednim adresem do strony (wtedy chyba zniknie znak zapytania z url)
+   history.replaceState( {}, document.title, window.location.href.split( '#' )[0] );
 }
 
 window.addEventListener( 'resize', fixLayout )
