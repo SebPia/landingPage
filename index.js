@@ -14,7 +14,7 @@ const fixLayout = () =>
    //str 2
    const p2_images = document.querySelectorAll( '#p2 > article > .phone_pic' )
    const transform_1 = `scale(0.7) rotate(-20.2deg) translateX(-${ offSet / 5 }px)`
-   const transform_3 = `translateX(-${ offSet / 9 }px)`
+   const transform_3 = `scale(0.7) translateX(-${ offSet / 9 }px)`
    p2_images[0].style.transform = transform_1
    p2_images[2].style.transform = transform_3
 
