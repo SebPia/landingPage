@@ -3,10 +3,10 @@
 
 ## This a preview of application.
 ![This is an image](https://i.postimg.cc/MHsdMbKp/zadanieprobne.png)
-
+Live: https://sebpia.github.io/landingPage/ 
 ## Description
 Responsive landing page made on the basis of the client's graphic design
-https://sebpia.github.io/landingPage/ <---live
+https://sebpia.github.io/landingPage/
 ## Technology
 
 ### FrontEnd
