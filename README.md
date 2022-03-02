@@ -5,7 +5,7 @@
 ![This is an image](https://i.postimg.cc/MHsdMbKp/zadanieprobne.png)
 
 ## Description
-Landing page made on the basis of the client's graphic design
+Responsive landing page made on the basis of the client's graphic design
 
 ## Technology
 
