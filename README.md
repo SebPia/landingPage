@@ -6,7 +6,7 @@
 
 ## Description
 Responsive landing page made on the basis of the client's graphic design
-
+https://sebpia.github.io/landingPage/ <---live
 ## Technology
 
 ### FrontEnd
