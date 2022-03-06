@@ -6,20 +6,17 @@ const fixLayout = () =>
    const windowW = window.innerWidth;
    const offSet = 1920 - windowW;
 
-
    //str 1
    const phone_hand = document.querySelector( '#rightPart' )
-   phone_hand.style.transform = `translateX(${ offSet / 3 }px)`
+   if ( windowW < 1000 ) phone_hand.style.transform = `scale(0.9) translateX(${ offSet / 15 }px)`
 
    //str 2
    const p2_images = document.querySelectorAll( '#p2 > article > .phone_pic' )
-   const transform_1 = `scale(0.7) rotate(-20.2deg) translateX(-${ offSet / 5 }px)`
-   const transform_3 = `scale(0.7) translateX(-${ offSet / 9 }px)`
+   const transform_1 = `scale(0.8) rotate(-20.2deg) translateX(-${ offSet / 5 }px)`
+   const transform_3 = `scale(0.8) translateX(-${ offSet / 8 }px)`
    p2_images[0].style.transform = transform_1
    p2_images[2].style.transform = transform_3
-
 }
-
 
 function scrollToTarget ( e )
 {
@@ -27,6 +24,7 @@ function scrollToTarget ( e )
    let element;
    id = e.target.id;
    if ( id === '' ) id = e.target.parentElement.id
+   document.activeElement.blur();
 
    switch ( id )
    {
@@ -49,7 +47,6 @@ function scrollToTarget ( e )
          break
 
       case 'logowanie':
-         // window.history.pushState( {}, "", "/#logowanie" )
          window.innerWidth <= 1120 && handleHamburgerClick()
          window.location.href = "#logowanie"
          break
@@ -90,8 +87,6 @@ function addPopUp ()
 
 
    // Dodawanie ;)
-   // console.log( window.location.href )
-   console.log( window.location.hash )
    const path = window.location.hash
 
    if ( path === "#logowanie" || path === "#rejestracja" )
@@ -123,7 +118,6 @@ function addPopUp ()
 
 function closePopUp ()
 {
-   // na produkcji ostatni parametr byłby bezpośrednim adresem do strony (wtedy chyba zniknie znak zapytania z url)
    history.replaceState( {}, document.title, window.location.href.split( '#' )[0] );
 }
 
@@ -143,3 +137,9 @@ menuItems.forEach( item =>
 } )
 
 
+
+// Obsługa menu klawiaturą (kliknięcie entera)
+document.addEventListener( "keypress", function ( e )
+{
+   if ( e.key === "Enter" ) document.activeElement.tagName === "LI" && document.activeElement.click()
+} );

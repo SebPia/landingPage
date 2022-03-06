@@ -5,6 +5,17 @@
           box-sizing: border-box;
 }
 
+li:focus {
+  outline: true;
+  outline-color: #CF469F;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+li {
+  caret-color: transparent;
+}
+
 button:hover {
   opacity: 0.6;
   cursor: pointer;
@@ -19,7 +30,7 @@ body {
 
 body nav {
   position: absolute;
-  top: 2vh;
+  top: 4vh;
   width: 100%;
   z-index: 10;
   display: -webkit-box;
@@ -47,7 +58,7 @@ body nav #logo {
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    margin-right: 3%;
+    margin-right: 10%;
   }
   body nav ol li {
     height: -webkit-fit-content;
@@ -72,7 +83,7 @@ body nav #logo {
 }
 
 body main #p1 {
-  background: linear-gradient(107.81deg, #2E22AB 5.97%, #CF469F 110.03%);
+  background: linear-gradient(90.81deg, #2E22AB 5.97%, #CF469F 110.03%);
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -81,8 +92,8 @@ body main #p1 {
 
 body main #p1 #left_part {
   position: absolute;
-  margin: 20% 0 0 10%;
-  width: 30%;
+  margin: 15% 0 0 15%;
+  width: 35%;
 }
 
 body main #p1 #left_part #left_part_header {
@@ -95,7 +106,7 @@ body main #p1 #left_part #left_part_header_text {
 
 body main #p1 #left_part .btn {
   padding: 8px 20px;
-  min-width: 200px;
+  min-width: 180px;
   margin-right: 15px;
   margin-top: 20px;
   background-color: transparent;
@@ -110,16 +121,18 @@ body main #p1 #left_part .btn:nth-child(1) {
 }
 
 body main #p1 #rightPart {
-  position: absolute;
-  top: 18vh;
-  right: 10%;
+  position: relative;
+  top: 13vh;
+  left: 60%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 body main #radius-top {
-  background-color: white;
-  top: 80vh;
-  left: -50vw;
   position: absolute;
+  background-color: white;
+  left: -50%;
+  top: 20%;
   width: 200vw;
   height: 700px;
   border-radius: 100%;
@@ -130,9 +143,9 @@ body main #p2 {
   top: -10vh;
   z-index: 2;
   min-height: 100vh;
-  width: 50vw;
+  width: 45vw;
   margin: 0 auto;
-  color: black;
+  color: #4C4C4C;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,6 +163,7 @@ body main #p2 img {
 body main #p2 #p2_header {
   font-size: 30px;
   font-weight: 700;
+  color: #1A1A1A;
 }
 
 body main #p2 .item_container {
@@ -176,7 +190,7 @@ body main #p2 .item_container header {
           align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, from(#F3A300), to(#F07A13));
   background: linear-gradient(180deg, #F3A300 0%, #F07A13 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Love Ya Like A Sister', cursive;
   margin-bottom: 10px;
@@ -195,40 +209,32 @@ body main #p2 .item_container img {
   z-index: 1;
 }
 
-body main #p2 .item_container #item1 {
-  margin-top: 42px;
-}
-
-body main #p2 .item_container #item4 {
-  margin-top: 80px;
-}
-
 body main #p2 .item_container #p2_pic1 {
   top: -100%;
-  left: -80%;
-  -webkit-transform: scale(0.7) rotate(-20.2deg);
-          transform: scale(0.7) rotate(-20.2deg);
+  left: -100%;
+  -webkit-transform: scale(0.8) rotate(-20.2deg);
+          transform: scale(0.8) rotate(-20.2deg);
 }
 
 body main #p2 .item_container #p2_pic2 {
-  left: 80%;
+  left: 90%;
   top: -180%;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 body main #p2 .item_container #p2_pic3 {
   left: -100%;
   top: -140%;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 body main #p2 .item_container #p2_pic4 {
-  left: -50%;
-  top: -20%;
-  -webkit-transform: scale(0.7) rotate(-72.2deg);
-          transform: scale(0.7) rotate(-72.2deg);
+  left: -30%;
+  top: 12%;
+  -webkit-transform: scale(0.8) rotate(-72.2deg);
+          transform: scale(0.8) rotate(-72.2deg);
 }
 
 body main #p2 .item_container #arrow1 {
@@ -249,6 +255,14 @@ body main #p2 .item_container #arrow3 {
   top: 80%;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+}
+
+body main #p2 #item1 {
+  margin-top: 80px;
+}
+
+body main #p2 #item4 {
+  margin-top: 200px;
 }
 
 body main #p2 .item_container:nth-child(odd) {
@@ -325,12 +339,16 @@ body main #p3 #white_container #white_container_top_header h2 {
   font-size: 1.6em;
 }
 
+body main #p3 #white_container #white_container_top_header #p3_big_header {
+  font-size: 35px;
+}
+
 body main #p3 #white_container #white_container_top_header img {
   position: absolute;
   top: -20%;
   left: 1%;
-  -webkit-transform: translateY(-40%) scale(0.7);
-          transform: translateY(-40%) scale(0.7);
+  -webkit-transform: translateY(-40%) scale(0.8);
+          transform: translateY(-40%) scale(0.8);
 }
 
 body main #p3 #white_container .row {
@@ -397,15 +415,18 @@ body main #p3 #white_container #part3 {
 }
 
 body main #p3 #white_container #part3 header {
-  color: black;
+  color: #1A1A1A;
   font-weight: 800;
   margin-bottom: 20px;
+  font-size: 1.2em;
 }
 
 body main #p3 #white_container #part3 .btn {
   padding: 5px 30px;
   border: 1px solid white;
   color: white;
+  height: 40px;
+  min-width: 180px;
   font-weight: 800;
   border-radius: 5px;
 }
@@ -413,6 +434,7 @@ body main #p3 #white_container #part3 .btn {
 body main #p3 #white_container #part3 .btn:nth-child(1) {
   background: -webkit-gradient(linear, left top, left bottom, from(#F3A300), to(#F07A13));
   background: linear-gradient(180deg, #F3A300 0%, #F07A13 100%);
+  margin-right: 20px;
 }
 
 body main #p3 #white_container #part3 .btn:nth-child(2) {
