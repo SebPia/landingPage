@@ -190,7 +190,7 @@ body main #p2 .item_container header {
           align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, from(#F3A300), to(#F07A13));
   background: linear-gradient(180deg, #F3A300 0%, #F07A13 100%);
-  background-clip: text;
+  -webkit-background: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Love Ya Like A Sister', cursive;
   margin-bottom: 10px;
@@ -273,6 +273,7 @@ body main #p2 .item_container:nth-child(odd) {
 body main #p2 #loremIpsum_bottom {
   background: -webkit-gradient(linear, left top, left bottom, from(#F3A300), to(#F07A13));
   background: linear-gradient(180deg, #F3A300 0%, #F07A13 100%);
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Love Ya Like A Sister', cursive;
